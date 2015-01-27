@@ -3,6 +3,7 @@ package org.usfirst.frc5137.JavaCode2015RB;
 import edu.wpi.first.wpilibj.GenericHID;
 import edu.wpi.first.wpilibj.RobotDrive;
 import edu.wpi.first.wpilibj.SpeedController;
+import org.usfirst.frc5137.JavaCode2015RB.Utils;
 
 public class TwistSteerDrive extends RobotDrive {
 
@@ -22,7 +23,7 @@ public class TwistSteerDrive extends RobotDrive {
      */
     public void twistDrive(GenericHID stick, boolean squaredInputs) {
         // simply call the full-featured arcadeDrive with the appropriate values
-        arcadeDrive(stick.getY(), stick.getZ(), squaredInputs);
+        arcadeDrive(stick.getY(), Utils.rampSpeed3528(stick.getZ()), squaredInputs);
     }
 	
 
