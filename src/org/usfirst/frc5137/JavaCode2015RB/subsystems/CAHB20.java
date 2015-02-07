@@ -9,20 +9,20 @@ import edu.wpi.first.wpilibj.*;
  */
 public class CAHB20 extends Subsystem {
 	
-    SpeedController linearActuator = RobotMap.cAHB20linearActuator;
+    Relay linearActuator = RobotMap.cAHB20LinearActuator;
     // Put methods for controlling this subsystem
     // here. Call these from Commands.
     
     public void extend(){
-    	linearActuator.set(1);
+    	linearActuator.set(Relay.Value.kForward);
     }
     
     public void retract(){
-    	linearActuator.set(-1);
+    	linearActuator.set(Relay.Value.kReverse);
     }
     
     public void stop(){
-    	linearActuator.set(0);
+    	linearActuator.set(Relay.Value.kOff);
     }
     public void initDefaultCommand() {
         // Set the default command for a subsystem here.
