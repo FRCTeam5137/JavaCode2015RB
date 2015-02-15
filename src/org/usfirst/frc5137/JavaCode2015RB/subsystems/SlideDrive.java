@@ -32,8 +32,8 @@ public class SlideDrive extends Subsystem {
     // Put methods for controlling this subsystem
     // here. Call these from Commands.
     
-    public void takeJoystickX(Joystick driveStick){
-    	xIn = driveStick.getX();
+    public void takeJoystickX(Joystick driveStick2){
+    	xIn = driveStick2.getX();
     	middleMotor.set(xIn);
     	}
     
