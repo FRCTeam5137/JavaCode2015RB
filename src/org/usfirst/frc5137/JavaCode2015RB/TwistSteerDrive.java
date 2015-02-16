@@ -23,7 +23,7 @@ public class TwistSteerDrive extends RobotDrive {
      */
     public void twistDrive(GenericHID stick, boolean squaredInputs) {
         // simply call the full-featured arcadeDrive with the appropriate values
-        arcadeDrive(stick.getY(), Utils.rampSpeed3528(stick.getZ()), squaredInputs);
+        arcadeDrive(stick.getY(), Utils.rampSpeed3044(stick.getZ(), 0.1), squaredInputs);
     }
 	
 
