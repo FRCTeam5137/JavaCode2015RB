@@ -18,8 +18,11 @@ import edu.wpi.first.wpilibj.command.CommandGroup;
 public class LandfillAuto extends CommandGroup {
     
     public  LandfillAuto() {
-    	addSequential(new PneumaticRetract());
-    	addSequential(new DriveAuto(-0.5, 0, 0.5));
+    	addSequential(new RaiseElevatorAuto(1.5));
+    	addSequential(new DriveAuto(-0.5, 0, 2));
+    	addSequential(new PneumaticRetractAuto());
+    	addSequential(new LowerElevatorAuto(0.7));
+    	addSequential(new DriveAuto(1, 0, 1.2));
         // Add Commands here:
         // e.g. addSequential(new Command1());
         //      addSequential(new Command2());

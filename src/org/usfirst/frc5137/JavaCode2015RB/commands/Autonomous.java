@@ -20,10 +20,10 @@ public class Autonomous extends CommandGroup {
     public  Autonomous() {
     	addSequential(new DriveSidewaysAuto(-0.75, 3.5));
     	addSequential(new DriveSidewaysAuto(0.5, 1.0));
-    	addSequential(new PneumaticExtend());
+    	addSequential(new PneumaticExtendAuto());
     	addSequential(new RaiseElevatorAuto(0.75));
     	addSequential(new DriveAuto(0.5, 0, 1.0));
-    	addSequential(new PneumaticRetract());
+    	addSequential(new PneumaticRetractAuto());
     	addSequential(new RaiseElevatorAuto(0.5));
     	addSequential(new DriveAuto(-0.5, 0, 0.5));
     	addSequential(new DriveAuto(-0.3, 0.5, 1.5));

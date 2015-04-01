@@ -5,3 +5,5 @@
 *.txt~
 *.properties~
 *.xml~
+*.class
+

@@ -29,6 +29,7 @@ public class RobotMap {
     public static RobotDrive driveBaseChassis;
     public static SpeedController slideDriveMiddleMotor;
     public static DoubleSolenoid grabberDoubleSolenoid;
+    public static DoubleSolenoid binGrabberDoubleSolenoid;
     public static Compressor grabberCompressor;
     public static Relay cAHB20LinearActuator;
     public static SpeedController elevatorElevatorVictor;
@@ -59,6 +60,8 @@ public class RobotMap {
         
         grabberDoubleSolenoid = new DoubleSolenoid(0, 0, 1);      
         LiveWindow.addActuator("Grabber", "Double Solenoid", grabberDoubleSolenoid);
+        
+        binGrabberDoubleSolenoid = new DoubleSolenoid(0, 2, 3);
         
         grabberCompressor = new Compressor(0);
         

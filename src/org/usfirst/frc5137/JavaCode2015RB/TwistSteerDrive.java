@@ -9,7 +9,6 @@ public class TwistSteerDrive extends RobotDrive {
 
 	public TwistSteerDrive(SpeedController leftMotor, SpeedController rightMotor) {
 		super(leftMotor, rightMotor);
-		// TODO Auto-generated constructor stub
 	}
 
 	
