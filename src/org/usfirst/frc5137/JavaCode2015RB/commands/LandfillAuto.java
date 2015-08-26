@@ -21,7 +21,7 @@ public class LandfillAuto extends CommandGroup {
     	addSequential(new RaiseElevatorAuto(1.5));
     	addSequential(new DriveAuto(-0.5, 0, 2));
     	addSequential(new PneumaticRetractAuto());
-    	addSequential(new LowerElevatorAuto(0.7));
+    	addSequential(new LowerElevatorAuto(0.8));
     	addSequential(new DriveAuto(1, 0, 1.2));
         // Add Commands here:
         // e.g. addSequential(new Command1());

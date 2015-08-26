@@ -77,7 +77,10 @@ public class Robot extends IterativeRobot {
         autoChooser.addObject("Push and Grab", new Autonomous());
         autoChooser.addObject("Push Only", new PushAuto());
         autoChooser.addObject("Grab From Landfill", new LandfillAuto());
+        autoChooser.addObject("Bin Lift + Drive", new BinLiftDrive());
+        autoChooser.addObject("Bin Lift Only", new BinLift());
         autoChooser.addObject("Bin Grabber Autonomous", new BinGrabberAuton());
+        autoChooser.addObject("Bin Pull", new BinDrag());
         SmartDashboard.putData("Autonomous Mode Chooser", autoChooser);
     }
 
